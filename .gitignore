@@ -1,10 +1,39 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.py[cod]
+*.py.class
 build/
 dist/
 wheels/
 *.egg-info
+develop-eggs/
+parts/
+sdist/
+var/
 
 # Virtual environments
 .venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Test outputs
+.pytest_cache/
+.ruff_cache/
+
+# OS Files
+.DS_Store
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Project specific files
+whatsapp_chat.txt
+poop_results.json
+
+# Distribution / packaging
+*.egg

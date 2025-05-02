@@ -1,7 +1,26 @@
+[build-system]
+ requires = ["setuptools>=61.0"]
+ build-backend = "setuptools.build_meta"
+
 [project]
 name = "loo-parser"
 version = "0.1.0"
 description = "Parse poop-related whatsapp messages to record loo usage over time by user"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "python-dateutil>=2.9.0.post0",
+    "typer>=0.15.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "ruff",
+]
+
+[project.scripts]
+loo-parser = "loo_parser.parser:cli"
+
+[tool.setuptools.package-data]
+loo_parser = ["py.typed"]
