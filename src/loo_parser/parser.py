@@ -273,7 +273,7 @@ def main(input_file: str = None, output_file: str = None):
 
         # Store results as JSON
         with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(results, f, indent=2, cls=DateTimeEncoder)
+            json.dump(results, f, indent=2, cls=DateTimeEncoder, ensure_ascii=False)
 
         print(f"Results saved to {output_file}")
         return 0

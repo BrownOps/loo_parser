@@ -52,7 +52,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3.5" },
     { name = "python-dateutil", specifier = ">=2.9.0.post0" },
     { name = "ruff", marker = "extra == 'dev'" },
-    { name = "typer", specifier = ">=0.12.3" },
+    { name = "typer", specifier = ">=0.15.3" },
 ]
 provides-extras = ["dev"]
 
